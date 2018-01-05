@@ -1,0 +1,343 @@
+.row{margin: 0;}
+.colocation{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+    font-family: 'Roboto';
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    @media only screen and (max-width: 1120px){
+        max-width: 740px;
+    }
+    @media only screen and (max-width: 580px){
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+.price-block-heing{
+    @media only screen and (max-width: 767px){
+        height: 805px;
+    }
+    @media only screen and (max-width: 580px){
+        height: 546px;
+    }
+}
+.layout{
+    font-family: sans-serif;
+    padding-top: 13px;
+    margin-top: 70px;
+    color: #423d31;
+    text-align: center;
+    margin: 70px auto 0;
+    @media only screen and (max-width: 1120px){
+        font-size: 14px;  
+    }
+    @media only screen and (max-width: 820px){
+        margin-left: -10px;  
+    }
+    @media only screen and (max-width: 767px){
+        margin: 70px auto 0 ; 
+        font-size: 24px;
+    }
+    @media only screen and (max-width: 580px){
+        font-size: 14px;  
+    }
+    
+    article{
+       border-bottom: solid 1px #909090;
+       padding-bottom: 28px;
+        @media only screen and (max-width: 1120px){
+           padding-bottom: 19px; 
+        }
+    }
+    h3{ 
+        text-align: center;
+        font-size: 17px;
+        text-align: center;
+        margin: 0 25px 20px ;
+        font-weight: 700;
+        @media only screen and (max-width: 1120px){
+            font-size: 12px;
+            margin: 0 16px 9px;
+        }
+        @media only screen and (max-width: 767px){
+            font-size: 24px;  
+        }
+        @media only screen and (max-width: 580px){
+            font-size: 12px;
+            margin: 0 16px 9px;
+        }
+    }
+    p{
+        margin: 0 37px;
+        padding-bottom: 28px;
+        padding-top: 10px;
+        @media only screen and (max-width: 1120px){
+            font-size: 12px;
+            padding-bottom: 18px;
+            padding-top: 8px;
+            margin: 0 23px;
+        }
+        @media only screen and (max-width: 767px){
+            padding-top: 16px;
+            padding-bottom: 25px;
+        }
+        @media only screen and (max-width: 580px){
+            font-size: 12px;
+            padding-bottom: 18px;
+            padding-top: 8px;
+            margin: 0 23px; 
+        }
+        
+    }
+    span{
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    button{
+        width: 302px;
+        height: 65px;
+        border: solid 2px #54a5ec;
+        font-family: sans-serif;
+        margin: 0 auto;
+        
+        @media only screen and (max-width: 1120px){
+            width: 204px;
+            height: 44px;   
+        }
+        @media only screen and (max-width: 767px){
+           width: 350px;
+           height: 75.3px;
+           font-size: 23.2px;    
+        }
+        @media only screen and (max-width: 580px){
+            width: 204px;
+            height: 44px;   
+        }
+    }
+    button:hover{
+            color: green;
+            border: 2px solid green;
+        background-color: #ffffff;
+        }    
+}
+
+    .how{color:#54a5ec;}
+    .what{color: #000000;}
+    .layout_border{border-bottom: solid 1px #909090;}
+
+    @mixin config_layout($w, $h, $bg, $h3_top, $font){
+        width: $w;
+        height: $h; 
+        background-color: $bg;
+        h3 {margin-top: $h3_top}
+        p{font-size: $font}
+    }
+    @mixin button_config($bg, $color){
+        button{
+            background-color: $bg;
+            color: $color;
+        }
+    }
+
+$bg_layout: #eaf1f7;
+$bg_btn_center: #54A6ED;
+.layout_left { 
+    @include config_layout(347px, 680px, $bg_layout, 20px, 20px);
+    @include button_config($bg_layout, #54a5ec);
+        @media only screen and (max-width: 1120px) {
+            @include config_layout(234px, 460px, $bg_layout, 18px, 14px);
+        }
+        @media only screen and (max-width: 767px){
+            @include config_layout(402px, 735px,$bg_layout, 37px, 24px);
+        }
+        @media only screen and (max-width: 580px){
+            button{margin-top: 5px;} 
+            h3{margin-bottom: 0;}
+            @include config_layout(234px, 476px,$bg_layout, 28px, 14px); 
+        }    
+    
+    }
+.layout_center { 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 59px;
+    button{margin-top: 10px;}
+    @include config_layout(347px, 705px, #FFFFFF, 20px, 20px);
+    @include button_config($bg_btn_center, #FFFFFF);
+        @media only screen and (max-width: 1120px){
+            button{margin-top: 5px;} 
+            h3{margin-bottom: 0;}
+            @include config_layout(234px, 476px, #FFFFFF, 28px, 14px);    
+        }
+        @media only screen and (max-width: 767px){
+            @include config_layout(402px, 735px, #FFFFFF, 37px, 24px);
+        }
+        @media only screen and (max-width: 580px){
+            button{margin-top: 5px;} 
+            h3{margin-bottom: 0;}
+            @include config_layout(234px, 476px, #FFFFFF, 28px, 14px); 
+        }
+    
+    }
+.layout_right { 
+    @include config_layout(347px, 680px, $bg_layout, 60px, 20px);
+    @include button_config($bg_layout, #54a5ec);
+        @media only screen and (max-width: 1120px){
+            @include config_layout(234px, 460px, $bg_layout, 40px, 14px);    
+        }
+        @media only screen and (max-width: 767px){
+            @include config_layout(402px, 735px,$bg_layout, 37px, 24px);
+        }
+        @media only screen and (max-width: 580px){
+            button{margin-top: 5px;} 
+            h3{margin-bottom: 0;}
+            @include config_layout(234px, 476px,$bg_layout, 28px, 14px); 
+        }    
+        } 
+
+.equipment{
+    text-align: right;
+    }
+
+@mixin my-tape($width_tape, $bg_color, $bg_block, $left){
+    width: 0; height: 0; 
+    border-style: solid;
+    color:  white;
+    margin-left: $left;
+    border-width: 20px $width_tape 20px 20px;
+    border-color:  $bg_color $bg_color $bg_color $bg_block;
+    @media only screen and (max-width: 1120px){
+        border-width: 12px $width_tape 12px 12px;   
+    }
+    @media only screen and (max-width: 767px){
+        border-width: 18px $width_tape 18px 18px; 
+   
+    }
+    @media only screen and (max-width: 580px){
+        border-width: 12px $width_tape 12px 12px;   
+    }
+    
+    }
+@mixin my-tape-task($width_task, $padding_task){
+    margin-top: -20px;
+    width: $width_task;
+    text-align: center;
+    padding: $padding_task;
+    font-family: Roboto;
+    font-size: 14px;
+    @media only screen and (max-width: 1120px){
+        font-size: 11px;
+        margin-top: - 18px;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 14px;
+        margin-top: - 22px;
+    }
+    }
+.tape_blue{
+    @include my-tape(150px, #56A6ED, #EAF1F7, 177px);
+    @media only screen and (max-width: 1120px){
+        @include my-tape(150px, #56A6ED, #EAF1F7, 72px);
+    }
+    }
+.tape_red{@include my-tape(300px, #ED556E, #FFFFFF, 28px);
+    @media only screen and (max-width: 1120px){
+        @include my-tape(160px, #ED556E, #FFFFFF, 62px);   
+    }
+    @media only screen and (max-width: 767px){
+        @include my-tape(273px, #ED556E, #FFFFFF, 111px);  
+    }
+    @media only screen and (max-width: 580px){
+        @include my-tape(160px, #ED556E, #FFFFFF, 62px);      
+    }
+    }
+ .task_red{@include my-tape-task(300px, 10px);
+    @media only screen and (max-width: 1120px){
+        @include my-tape-task(160px, 10px); 
+    }
+    @media only screen and (max-width: 767px){
+        @include my-tape-task(260px, 10px); 
+    } 
+    @media only screen and (max-width: 580px){
+        @include my-tape-task(160px, 10px); 
+    }
+     
+    }
+.task_blue{@include my-tape-task(150px, 10px);}
+.chevron_left{
+    img{cursor: pointer;}
+    @media only screen and (max-width: 767px){
+        
+    padding-top: 370px; 
+        text-align: right;
+    }
+    @media only screen and (max-width: 580px){
+         padding-top: 248px;
+    }
+    @media only screen and (max-width: 410px){
+        display: none;    
+    }
+    }
+.chevron_center{
+    @media only screen and (max-width: 410px){
+        width: 100%;
+    }
+}
+.chevron_right{
+    cursor: pointer;
+    @media only screen and (max-width: 767px){
+        padding-top: 370px;
+        margin-left: -25px;
+    }
+    @media only screen and (max-width: 580px){
+        padding-top: 248px;
+        margin-left: -35px;
+    }
+    @media only screen and (max-width: 410px){
+        display: none;
+    }
+    }
+.price_button{
+    display: none;
+    width: 130px;
+    margin: 0 auto;
+        @media only screen and (max-width: 767px){
+            display: block;
+        }
+    button{
+        border:0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;    
+    border: solid 1px #6B6D7B;
+    background-color: #FFFFFF;
+    margin: 20px 10px;
+    }
+    button:hover{background-color:gainsboro;}
+    button:active{background-color: red;}
+    button:focus{outline: none; background-color: gray;}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

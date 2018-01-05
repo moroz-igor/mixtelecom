@@ -1,0 +1,171 @@
+$color-button-custom: #54A6EC;
+.customers{
+    font-family: 'Roboto';
+    text-align: center;
+    @media only screen and (max-width: 768px){
+        display: none;   
+    }
+    h2{
+       font-size: 40px;
+        color: black;
+        padding: 15px;
+    }
+    article{
+        position: relative;
+        max-width: 1150px;
+        margin: 0 auto;
+        @media only screen and (max-width: 1120px){
+            max-width: 700px;
+        }
+    div{
+        position: relative;
+        display: inline-table;
+        width: 510px;
+        height: 396px;
+        background-color: #F4F5F9;
+        text-align: left;
+        padding: 0 35px;
+        margin: 5px;
+        z-index: 1;
+            h4{
+            font-family: sans-serif;
+            font-weight: bold;
+            }
+            button{
+            height: 40px;
+            width: 170px;
+            border: solid 2px  $color-button-custom;
+            background-color:  #F4F5F9;
+            margin-top: 35px;
+            color:  $color-button-custom;
+            font-weight: 500;
+            font-family: sans-serif;
+            position: absolute;
+            left: 35px;
+            bottom: 35px;
+            cursor: pointer;
+            }
+            button:hover{
+                border-color: green;
+                color: green;
+                font-size: 18px;
+            }
+            p{
+            font-style: italic;
+            font-size: 18px;
+            }
+        }
+            i{
+            position: absolute;
+            top: 180px; 
+            color: #7F7F7F;
+            cursor: pointer;
+            z-index: 2;
+            }
+            i:hover{
+                color: green;
+                font-size: 40px;
+            }
+    }
+}
+.fa-chevron-left{ left: 20px; }
+.fa-chevron-right{ right: 20px; }
+ img[alt="fora-telecom"]{
+    position: absolute;
+    left: 35px;
+}
+#megafon{
+    @media only screen and (max-width: 1120px){
+        display: none;
+    }
+}
+.customers_md{
+    display: none;
+    @media only screen and (max-width: 768px){
+        display: inline;
+        font-family: 'Roboto';
+        h2{font-size: 40px;text-align: center;}
+        article{
+            text-align: center;
+            padding: 5px;
+            //max-width: 740px;
+            @media only screen and (max-width: 690px){
+                padding: 0;
+            text-align: center;
+            }
+        }
+    }
+}
+img[class="logo_md"]{
+    @media only screen and (max-width: 740px){
+        display: none;
+    }
+}
+.logo_xs{
+    display: none;
+        width: 220px;
+        text-align: center;
+        img{
+            margin-top: 20px;
+            @media only screen and (max-width: 630px){
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 740px){
+            display: inline-table;
+            
+        }
+        @media only screen and (max-width: 690px){
+            width: 200px;
+        }
+}
+#sis{
+    display: none;
+    @media only screen and (max-width: 630px) {
+        display: block;
+        margin: 0 auto;
+    }  
+}
+.md_up{
+    img{
+        margin: 0 15px;
+        @media only screen and (max-width: 740px){
+            margin: 0;
+        }
+    }
+}
+h6{height: 0.1px;}/*validator*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

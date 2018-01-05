@@ -1,0 +1,66 @@
+.company_info{
+    background-image: url(../../images/banner/banner.png);
+    padding: 120px 119px 70px;
+    color: #ffffff;
+    @media only screen and (max-width: 1150px) {
+       padding-left: 5%;
+       padding-right: 5%;
+    }
+    @media only screen and (max-width: 900px) {
+        padding-top: 100px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    @media only screen and (max-width: 769px) {
+        background-image: url(../../images/banner/banner_ipad.png);
+        padding-top: 60px;
+    }
+    @media only screen and (max-width: 641px) {
+        background-image: url(../../images/banner/banner_mob.png);          
+    }
+    @media only screen and (max-width: 460px) {
+        background-image: url(../../images/banner/bg_mob.jpg);          
+    }
+    
+    h2{
+        font-size: 48px;
+        margin: 0;
+        font-family: 'Roboto';
+        max-width: 700px;
+    }
+    p{
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.57;
+        margin-top: 40px;
+        @media only screen and (max-width: 641px) {
+            font-size: 24px; 
+            font-weight: 300;
+            line-height: 1.25;    
+        }
+        @media only screen and (max-width: 460px) {
+            font-size: 14px; 
+            font-weight: 300;
+            line-height: 1.25;    
+        }
+    }
+}
+.banner_content{
+    @media only screen and (max-width: 769px) {
+       display: none;
+    }
+}
+.banner_mob_content{
+    display: none;
+    @media only screen and (max-width: 769px) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+

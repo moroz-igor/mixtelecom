@@ -1,0 +1,291 @@
+$color-anchor: #2B4866;
+footer[class="footer_up"]{
+    background-color: #152435;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    position: relative;
+    article{
+        margin: 0 auto;
+        max-width: 1040px;
+        @media only screen and (max-width: 1120px){
+        max-width: 900px   
+        }
+        @media only screen and (max-width: 990px){
+        max-width: 760px;
+        padding-bottom: 50px;     
+        }
+        @media only screen and (max-width: 580px){
+        max-width: 320px;
+        }
+    div{
+        img{
+            margin-right: 20px;
+            @media only screen and (max-width: 740px){
+            }
+            @media only screen and (max-width: 580px){
+            margin-bottom: 10px;
+            }
+        }
+        color: #ffffff;
+        font-size: 12px;
+        @media only screen and (max-width: 990px){
+        padding: 0 0 0 15px;
+        }
+        @media only screen and (max-width: 740px){
+        font-size: 28px;
+            padding-left: 20px;
+        }
+        @media only screen and (max-width: 580px){
+        font-size: 16px;
+        }
+    }
+    } 
+}
+.anchor{
+    border: solid 2px $color-anchor;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px 18px;
+    color: $color-anchor;
+    cursor: pointer;
+    position: absolute; right: 10%;
+    @media only screen and (max-width: 1120px){
+        right: 5%;
+    }
+    @media only screen and (max-width: 1020px){
+        display: none;
+    }
+    a:hover{color: greenyellow;}
+}
+
+.footer_content{
+    border-left: 1px solid $color-anchor;
+    padding: 0 120px 0 20px;
+    @media only screen and (max-width: 1120px){
+       padding: 0 70px 0 20px; 
+    }
+    display: inline-table;
+        @media only screen and (max-width: 990px){
+        margin-right: 10px;
+        }
+        @media only screen and (max-width: 740px){
+        display: block;
+            border: none;
+        }
+    p{
+        a{
+        color: #ffffff;
+        text-decoration: none;
+         }
+        a:hover{
+        color: greenyellow;
+        text-decoration: underline;
+        }
+    }
+}
+.footer_img{
+    display: inline-table;
+    @media only screen and (max-width: 740px){
+        display: none;
+    }
+}
+.footer_img_xs{
+    display: none;
+    @media only screen and (max-width: 740px){
+        display: inline;
+    }
+}
+.footer_contact{
+    border-left: 1px solid $color-anchor;
+    padding: 0 70px 0 20px;
+    display: inline-table;
+    @media only screen and (max-width: 990px){
+    margin-right: 10px;
+    }
+    @media only screen and (max-width: 580px){
+     display: block;
+        border: none;
+    }
+    a{
+    font-size: 15px;
+    text-decoration: underline;
+        @media only screen and (max-width: 740px){
+            font-size: 30px;
+        }
+        @media only screen and (max-width: 580px){
+            font-size: 14px;
+        }
+    }
+    a:hover{
+    color: greenyellow;
+    }
+}
+.link_md{
+    display: none;
+    @media only screen and (max-width: 990px){
+        display: block;
+    }
+}
+.link_lg{
+    @media only screen and (max-width: 990px){
+        display: none;
+    }
+}
+
+footer[class="down"]{
+    background-color: #0B121C;
+    padding: 1px;
+    article{
+        max-width: 1040px;
+        margin: 0 auto;
+        color:#ffffff;
+        font-size: 12px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 1120px){
+            max-width: 900px;
+        }
+        @media only screen and (max-width: 990px){
+            max-width: 690px;
+        }
+        @media only screen and (max-width: 740px){
+           padding: 25px; 
+        }
+        span{
+            width: 340px;  
+            padding-right: 190px;
+            @media only screen and (max-width: 1120px){
+                padding-right: 70px;   
+            }
+            @media only screen and (max-width: 990px){
+                padding-right: 25px;   
+            }
+            @media only screen and (max-width: 850px){
+                padding-right: 25px;
+            }
+            @media only screen and (max-width: 740px){
+                font-size: 28px;
+                display: block;
+                width: 450px;
+                padding-bottom: 10px;
+            }
+            @media only screen and (max-width: 580px){
+                font-size: 16px;
+                width: 280px;
+            }    
+        }
+        p{
+            display: inline-block;
+            @media only screen and (max-width: 740px){
+                display: none;
+            }
+        }
+        
+    }
+}
+
+.social{
+    display: inline-block;
+    div{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #2F353D;
+        display: inline-table;
+        margin: -5px 0;
+        padding: 8px;
+        text-align: center;
+        img[alt="facebook"]{
+            display: none;
+            margin-top: 5px;
+            @media only screen and (max-width: 740px){display: inline;}
+            @media only screen and (max-width: 580px){display: none;} 
+        }
+        img[alt="instagram"]{
+            display: none;
+            margin-top: 5px;
+            @media only screen and (max-width: 740px){display: inline;}
+            @media only screen and (max-width: 580px){display: none;} 
+        }
+        img[alt="lg_facebook"]{
+            margin-left: 6px;
+            @media only screen and (max-width: 740px){display: none;}
+            @media only screen and (max-width: 580px){display: inline;}
+        }
+        img[alt="lg_instagram"]{
+            margin-left: 2px;
+            @media only screen and (max-width: 740px){display: none;}
+            @media only screen and (max-width: 580px){display: inline;}
+        }
+        @media only screen and (max-width: 740px){
+            width: 60px;
+            height: 60px;
+        }
+        @media only screen and (max-width: 580px){
+            width: 35px;
+            height: 35px;
+        }        
+    }
+    div:hover{
+        background-color: #ABB4BE;
+    }
+    @media only screen and (max-width: 740px){
+    display: block;
+        text-align: right;
+    }
+    }
+
+img[alt="search"]{
+    margin-left: -50px;
+    @media only screen and (max-width: 1120px){
+        margin-left: 0;
+    }
+    @media only screen and (max-width: 740px){
+    display: none;
+    }
+}
+img[alt="logo_footer_down_md"]{
+    margin: 0 30px;
+    @media only screen and (max-width: 990px){
+    margin: 0 20px;
+    }
+    @media only screen and (max-width: 740px){
+    display: none;
+    }
+    @media only screen and (max-width: 580px){
+    display: inline;
+    }
+    
+}
+img[alt="logo_footer_down"]{
+    display: none;
+    @media only screen and (max-width: 740px){
+    display: inline;
+    }
+    @media only screen and (max-width: 580px){
+    display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

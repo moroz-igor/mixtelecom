@@ -1,0 +1,6 @@
+1)
+cd/dd:
+2)
+cd Web_project\mixtelecom_price\sass_perfom
+3)
+sass --watch scss/style.scss:css/style.css

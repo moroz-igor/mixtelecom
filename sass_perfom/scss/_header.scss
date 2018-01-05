@@ -1,0 +1,291 @@
+$nav_color: rgba(1, 1, 1, 0.6);
+$color_banner: #ffffff;
+.banner {
+    background-image: url(../../images/header/bg_header_mob.jpg);
+    color: $color_banner;
+    height: 38px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: none;
+    @media only screen and (max-width: 1120px) {
+        display: block;
+    }
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.time {
+    text-align: center;
+    font-size: 25px;
+}
+
+.battary {
+    font-size: 25px;
+    text-align: right;
+}
+
+.circle {
+    height: 11px;
+    width: 11px;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 13px 2px;
+}
+
+img[alt="wifi"] {
+    margin: -25px 10px 0;
+}
+
+.navigation {
+    padding: 14px 12px 12px;
+    max-width: 1100px;
+    margin: 0 auto;
+    @media only screen and (max-width: 741px) {
+        padding-bottom: 28px;
+    }
+    @media only screen and (max-width: 1120px) {
+        position: relative;
+        background-color: #EBEEF1;
+        nav {
+            max-width: 680px;
+            margin: 0 auto;
+            @media only screen and (max-width: 830px) {
+                margin: 0;
+            }
+            @media only screen and (max-width: 741px) {
+                margin: 0 auto;
+                position: relative;
+                max-width: 602px;
+            }
+            @media only screen and (max-width: 600px) {
+                margin: 5px auto 0;
+                text-align: center;
+            }
+        }
+    }
+    div {
+        display: inline-block;
+    }
+}
+
+div[class="logo"] {
+    background-image: url(../../images/header/logo-lg.png);
+    width: 166px;
+    height: 39px;
+    margin-top: -25px;
+    margin-right: 16px;
+    @media only screen and (max-width: 1120px) {
+        background-image: url(../../images/header/logo-md.png);
+        width: 199px;
+        height: 47px;
+        margin-bottom: -5px;
+    }
+    @media only screen and (max-width: 741px) {
+        background-image: url(../../images/header/logo_mob.png);
+        width: 213px;
+        height: 167px;
+        margin-top: 14px;
+    }
+    @media only screen and (max-width: 600px) {
+        margin-top: -10px;
+    }
+}
+
+#phone_private {
+    @media only screen and (max-width: 781px) {
+        margin-left: -20px;
+    }
+    @media only screen and (max-width: 741px) {
+        position: absolute;
+        top: 42px;
+        right: 0px;
+    }
+    @media only screen and (max-width: 600px) {
+        position: static;
+        margin: 0 10px;
+        //margin-top: -10px;
+    }
+    @media only screen and (max-width: 400px) {
+        margin: 0;
+    }
+}
+
+#private {
+    @media only screen and (max-width: 741px) {
+        display: block;
+    }
+}
+
+.nav_element>ul {
+    @media only screen and (max-width: 1120px) {
+        display: none;
+    }
+}
+
+.sandwich {
+    width: 73px;
+    height: 73px;
+    background-color: #68788b;
+    text-align: center;
+    padding-top: 24px;
+    display: none;
+    cursor: pointer;
+    @media only screen and (max-width: 1120px) {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    @media only screen and (max-width: 741px) {
+        display: none;
+    }
+}
+
+#company {
+    width: 101px;
+}
+
+#services {
+    width: 60px;
+}
+
+.nav_element>ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 15px 12.5px 0 12.5px;
+    color: $nav_color;
+    font-size: 17px;
+    height: 32px;
+    width: 80px;
+    a {
+        text-decoration: none;
+        color: $nav_color;
+    }
+    a:hover {
+        font-weight: bold;
+        color: #000000;
+    }
+}
+
+.nav_element>p {
+    margin-right: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    @media only screen and (max-width: 1120px) {
+        margin: 0 14px;
+        font-size: 20px;
+    }
+    @media only screen and (max-width: 767px) {
+        margin: 0 5px;
+    }
+    @media only screen and (max-width: 741px) {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 375px) {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.private_office {
+    width: 185.5px;
+    height: 47.3px;
+    background-color: #54a6ec;
+    font-size: 18.9px;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #ffffff;
+    border: none;
+    @media only screen and (max-width: 741px) {
+        width: 244px;
+        height: 62.3px;
+        font-size: 25.4px;
+    }
+    @media only screen and (max-width: 380px) {
+        width: 185.5px;
+        height: 47.3px;
+        font-size: 18.9px;
+    }
+}
+.private_office:hover{
+        color: #54A6EC;
+        background-color: #ffffff;
+        border: 2px solid #54A6EC;
+    }
+
+.language {
+    width: 56.9px;
+    height: 47.3px;
+    font-size: 18px;
+    margin: 0 9px;
+    text-align: center;
+    padding-top: 10px;
+    border: solid 2px $nav_color;
+    color: $nav_color;
+    @media only screen and (max-width: 741px) {
+        width: 73.2px;
+        height: 62.3px;
+        font-size: 25.4px;
+    }
+    @media only screen and (max-width: 380px) {
+        width: 56.9px;
+        height: 47.3px;
+        font-size: 18px;
+    }
+}
+
+$color-pop-up: rgba(0, 0, 0, 0.6);
+.pop_up_menu {
+    margin: 0;
+    display: none;
+    @media only screen and (max-width: 641px) {
+        display: block;
+    }
+    div {
+        text-align: center;
+        i {
+            color: $color-pop-up;
+            margin-top: 30px;
+        }
+        i:hover{
+            color: green;
+            font-size: 40px;
+        }
+    }
+}
+
+#text {
+    font-size: 36px;
+    color: $color-pop-up;
+    margin: 16px 0;
+}
+
+.pop-up {
+    text-align: center;
+    display: none;
+    padding-bottom: 10px;
+    p {
+        display: inline-block;
+        margin: 20px 5%;
+        font-size: 16px;
+        @media only screen and (max-width: 641px) {
+            margin: 0 2%;
+        }
+        @media only screen and (max-width: 375px) {
+            margin: 0 1%;
+            font-size: 14px;
+        }
+        a {
+            color: $color-pop-up;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+}

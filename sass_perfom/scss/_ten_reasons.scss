@@ -1,0 +1,66 @@
+.ten_reasons{
+    background-color: #FFFFFF;
+    h2{
+        max-width: 620px;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 1.2;
+        text-align: center;
+        color: #000000;
+        font-family: 'Roboto';
+        margin: 50px auto 40px;
+    }
+}
+.reasons_elements{
+    margin: 0 auto;
+    max-width: 1062px;
+    padding: 0 5px;
+    @media only screen and (max-width: 1065px) {
+        max-width: 738px;
+    }
+    @media only screen and (max-width: 767px) {
+        max-width: 494px;
+    }
+    @media only screen and (max-width: 494px) {
+        max-width: 250px;
+    }
+}
+.some_element{ 
+        height: 140px;
+        width: 240px;
+        display: inline-block;
+        margin: 10px 10px;
+        text-align: center;
+        @media only screen and (max-width: 1065px) {
+        margin-left: 0;
+        margin-right: 0;
+        }
+    div{
+        width: 67px;
+        height: 67px;
+        margin: 0 auto;
+    }
+    p{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 300;
+        color: #000000;
+        span{
+           font-weight:700; 
+            font-family:sans-serif;
+        }
+    }
+    }
+
+#hands{
+   padding-top: 15px;
+}
+img[alt="medal"]{
+    margin-top: -5px;
+}
+img[alt="juggling-ball"]{
+     margin-top: -5px; 
+}
+
+
+
